@@ -1,4 +1,4 @@
-champ,2,3,4,5,6,7,rank,factor,6/28/16,Multiple data corrections per image
+champ,2,3,4,5,6,7,rank,factor,6/29/16,"Multiple data corrections per image, guillotine fix"
 4-abomination,3863,3839,3806,3760,3681,3224,'1/25,0.71,,
 4-agentvenom,4175,4148,4112,4061,3973,3453,'2/35,1.00,,
 4-antman,3810,3790,3771,3701,3690,3134,'3/45,1.00,,
@@ -24,7 +24,7 @@ champ,2,3,4,5,6,7,rank,factor,6/28/16,Multiple data corrections per image
 4-falcon,4254,4226,4188,4134,4042,3490,,,,
 4-gamora,3938,3912,3875,3824,3735,3206,,,,
 4-groot,4077,3998,3969,3928,3867,3327,,,,
-4-guillotine,3925,3903,3873,3830,3758,#REF!,,,,
+4-guillotine,3925,3093,3873,3830,3758,3325,,,,
 4-hawkeye,3727,3703,3671,3626,3548,3116,,,,
 4-hulk,3677,3639,3625,3582,3509,3056,,,,
 4-hulkbuster,4126,4100,4079,4018,3937,3426,,,,
