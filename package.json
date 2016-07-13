@@ -1,0 +1,29 @@
+{
+  "name": "prestigecalc",
+  "version": "1.0.0",
+  "description": "Prestige Calc",
+  "main": "index.js",
+  "scripts": {
+    "start": "babel-node convert-csv-to-json.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mattkrafft/prestigecalc.git"
+  },
+  "author": "mattkrafft",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mattkrafft/prestigecalc/issues"
+  },
+  "homepage": "https://github.com/mattkrafft/prestigecalc#readme",
+  "devDependencies": {
+    "babel-core": "^6.5.1",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.1.3",
+    "babel-plugin-transform-runtime": "^6.1.18",
+    "babel-preset-es2015": "^6.1.2",
+    "babel-preset-stage-0": "^6.1.2",
+    "byline": "^4.2.1",
+    "glob": "^7.0.5"
+  }
+}
