@@ -1,23 +1,28 @@
 {
-  "name": "prestigecalc",
+  "name": "champions-prestigecalc",
   "version": "1.0.0",
-  "description": "Prestige Calc",
+  "description": "Prestige Calc to Champions Converter",
   "main": "index.js",
   "scripts": {
-    "start": "babel-node convert-csv-to-json.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "babel-node convert-csv-to-json.js ./node_modules/prestigecalc/PrestigeData.csv ./coefficient-by-rank.json",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "install": "napa mattkrafft/prestigecalc"
+  },
+  "napa-config": {
+    "cache": false,
+    "log-level": "error"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mattkrafft/prestigecalc.git"
+    "url": "git+https://github.com/hook/champions-prestigecalc.git"
   },
-  "author": "mattkrafft",
+  "author": "Gabriel Hook",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/mattkrafft/prestigecalc/issues"
+    "url": "https://github.com/hook/champions-prestigecalc/issues"
   },
-  "homepage": "https://github.com/mattkrafft/prestigecalc#readme",
-  "devDependencies": {
+  "homepage": "https://github.com/hook/champions-prestigecalc#readme",
+  "dependencies": {
     "babel-core": "^6.5.1",
     "babel-plugin-transform-es2015-modules-commonjs": "^6.1.3",
     "babel-plugin-transform-runtime": "^6.1.18",
@@ -25,5 +30,8 @@
     "babel-preset-stage-0": "^6.1.2",
     "byline": "^4.2.1",
     "glob": "^7.0.5"
+  },
+  "devDependencies": {
+    "napa": "^2.3.0"
   }
 }

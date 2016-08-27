@@ -5,8 +5,6 @@ const OUTPUT_FILE = './coefficient-by-rank.json';
 
 let json = {};
 
-
-
 fs.readFileSync(INPUT_FILE)
     // break into lines and skip the header line.
     .toString().replace(/\r\n/g, '\n').split('\n').slice(1)
