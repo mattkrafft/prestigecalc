@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "babel-node convert-csv-to-json.js ./node_modules/prestigecalc/PrestigeData3.csv ./coefficient-by-rank.json",
+    "copy": "cp ./coefficient-by-rank.json ../champions/src/data/pi/coefficient-by-rank.json",
     "test": "echo \"Error: no test specified\" && exit 1",
     "install": "napa mattkrafft/prestigecalc"
   },
