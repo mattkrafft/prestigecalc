@@ -1,7 +1,7 @@
 import fs from 'fs';
 
-const INPUT_FILE = './PrestigeData3.csv';
-const OUTPUT_FILE = './coefficient-by-rank.json';
+const INPUT_FILE = process.argv[2];
+const OUTPUT_FILE = process.argv[3];
 
 let json = {};
 
