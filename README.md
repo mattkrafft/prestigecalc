@@ -10,13 +10,20 @@ Install npm, then from the command line run:
 $ npm i
 ```
 
-Now run the script to build coefficient-by-rank.json:
+To *update from git*, *compile the js*, and then *copy to a neighboring champions repository*, run:
 
-```bash
+```
 $ npm start
 ```
+You can run each step individually (and respectively) as:
 
-To copy into your neighboring /champions/ path:
+```bash
+$ npm run update
+```
+
+```bash
+$ npm run compile
+```
 
 ```bash
 $ npm run copy

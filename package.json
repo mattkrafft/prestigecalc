@@ -4,10 +4,12 @@
   "description": "Prestige Calc to Champions Converter",
   "main": "index.js",
   "scripts": {
-    "start": "babel-node convert-csv-to-json.js ./node_modules/prestigecalc/PrestigeData3.csv ./coefficient-by-rank.json",
-    "copy": "cp ./coefficient-by-rank.json ../champions/src/data/pi/coefficient-by-rank.json",
+    "start": "npm run update && npm run compile && npm run copy",
+    "update": "napa mattkrafft/prestigecalc",
+    "compile": "babel-node convert-csv-to-json.js ./node_modules/prestigecalc/PrestigeData3.csv ./coefficient-by-rank.json",
+    "copy": "cp -rf ./coefficient-by-rank.json ../champions/src/data/pi/coefficient-by-rank.json",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "install": "napa mattkrafft/prestigecalc"
+    "install": "npm run update"
   },
   "napa-config": {
     "cache": false,
@@ -32,7 +34,7 @@
     "byline": "^4.2.1",
     "glob": "^7.0.5"
   },
-  "devDependencies": {
+  "dependencies": {
     "napa": "^2.3.0"
   }
 }
