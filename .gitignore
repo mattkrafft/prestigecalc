@@ -1,4 +1,7 @@
 .sublime-*
+.DS_Store
+Thumbs.db
 npm-debug.log
-coefficient-by-rank.json
+/.idea
 /node_modules
+coefficient-by-rank.json
