@@ -3,6 +3,10 @@ import fs from 'fs';
 const INPUT_FILE = process.argv[2];
 const OUTPUT_FILE = process.argv[3];
 
+const uidMap = {
+    'blackpanthercw': 'blackpanthercivilwar',
+};
+
 let json = {};
 
 fs.readFileSync(INPUT_FILE)
@@ -16,7 +20,7 @@ fs.readFileSync(INPUT_FILE)
         const [champion, rank, pi, k = 1, a = 0, b = 0, c = 0] = line.split(',');
         // deconstruct the champion id, I used a swapped order.
         const [stars, uid] = champion.split('-');
-        const championId = `${uid}-${stars}`;
+        const championId = `${uidMap[uid] || uid}-${stars}`;
 
         if(!json[championId]) {
             json[championId] = {};
